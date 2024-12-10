@@ -1,107 +1,141 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Mischa's Stundenplan</title>
-		<style>
-			#timetable {
-				background-color: rgb(110, 87, 137);
-			}
-			#timetable {
-				color: rgb(230, 230, 230);
-			}
-			body {
-				background-color: rgb(182, 189, 119);
-				text-align: center;
-			}
-		</style>
-    </head>
-    <body>
-        <h1>Mein Stundenplan</h1>
-		<br>
-		<table border="10" align="left" width="80%" id="timetable"> 
+<head>
+    <meta charset="utf-8">
+    <title>Mischa's Stundenplan</title>
+    <style>
+        body {
+            background-color: rgb(182, 189, 119); /* Фон страницы */
+            font-family: Arial, sans-serif; /* Шрифт */
+            text-align: center; /* Выравнивание заголовка */
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: #333; /* Цвет текста заголовка */
+        }
+
+        .container {
+            margin: 100px auto;
+            width: 90%; /* Ширина контейнера */
+            max-width: 800px; /* Максимальная ширина */
+            background-color: #f2f2f2; /* Цвет фона коробки */
+            padding: 20px;
+            border-radius: 10px; /* Закругленные углы */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+        }
+
+        #timetable {
+            background-color: rgb(110, 87, 137); /* Фон таблицы */
+            color: rgb(230, 230, 230); /* Цвет текста в таблице */
+            border-collapse: collapse; /* Убираем двойные границы */
+            width: 100%; /* Таблица занимает всю ширину контейнера */
+            margin: 20px 0;
+        }
+
+        #timetable th, #timetable td {
+            border: 2px solid #f2f2f2; /* Белые границы */
+            padding: 10px; /* Отступ внутри ячеек */
+            text-align: center; /* Центрирование текста */
+        }
+
+        #timetable th {
+            background-color: #6d4e9f; /* Более тёмный цвет для заголовков */
+            color: white; /* Белый текст в заголовках */
+            font-weight: bold;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            color: white;
+            background-color: #0077cc;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        a:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mein Stundenplan</h1>
+    <div class="container">
+        <table id="timetable"> 
             <thead> 
                 <tr> 
                     <th>Montag</th>
-					<th>Dienstag</th>
-					<th>Mittwoch</th>
-					<th>Donnerstag</th>
-					<th>Freitag</th>
+                    <th>Dienstag</th>
+                    <th>Mittwoch</th>
+                    <th>Donnerstag</th>
+                    <th>Freitag</th>
                 </tr>
             </thead> 
             <tbody> 
                 <tr>
                     <td>Religion</td> 
-					<td>Deutsch</td>
-					<td>Mathematik</td>
-					<td></td>
-					<td>Deutsch</td>
+                    <td>Deutsch</td>
+                    <td>Mathematik</td>
+                    <td></td>
+                    <td>Deutsch</td>
                 </tr>
-				<tr>
+                <tr>
                     <td>Deutsch</td> 
-					<td>Informatik</td>
-					<td>Kunst</td>
-					<td>Politik</td>
-					<td>Englisch</td>
+                    <td>Informatik</td>
+                    <td>Kunst</td>
+                    <td>Politik</td>
+                    <td>Englisch</td>
                 </tr>
-				<tr>
+                <tr>
                     <td>Deutsch</td> 
-					<td>Informatik</td>
-					<td>Kunst</td>
-					<td>Politik</td>
-					<td>Englisch</td>
+                    <td>Informatik</td>
+                    <td>Kunst</td>
+                    <td>Politik</td>
+                    <td>Englisch</td>
                 </tr>
-				<tr>
+                <tr>
                     <td>Mathematik</td> 
-					<td>BBS</td>
-					<td>Englisch</td>
-					<td>Geschichte</td>
-					<td>Mathematik</td>
+                    <td>BBS</td>
+                    <td>Englisch</td>
+                    <td>Geschichte</td>
+                    <td>Mathematik</td>
                 </tr>
-				<tr>
+                <tr>
                     <td>Mathematik</td> 
-					<td>BBS</td>
-					<td>Englisch</td>
-					<td>Geschichte</td>
-					<td>Mathematik</td>
+                    <td>BBS</td>
+                    <td>Englisch</td>
+                    <td>Geschichte</td>
+                    <td>Mathematik</td>
                 </tr>
-				<tr>
+                <tr>
                     <td></td> 
-					<td>BBS</td>
-					<td>Erdkunde</td>
-					<td>Wirtschaft</td>
-					<td>Chemie</td>
+                    <td>BBS</td>
+                    <td>Erdkunde</td>
+                    <td>Wirtschaft</td>
+                    <td>Chemie</td>
                 </tr>
-				<tr>
+                <tr>
                     <td></td> 
-					<td>BBS</td>
-					<td></td>
-					<td>Sport</td>
-					<td></td>
+                    <td>BBS</td>
+                    <td></td>
+                    <td>Sport</td>
+                    <td></td>
                 </tr>
-				<tr>
+                <tr>
                     <td></td> 
-					<td>BBS</td>
-					<td></td>
-					<td>Sport</td>
-					<td></td>
+                    <td>BBS</td>
+                    <td></td>
+                    <td>Sport</td>
+                    <td></td>
                 </tr> 
             </tbody>
-		</table>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<a href="https://mykhorenko.github.io/index.html">Zurück</a>
-	</body>
+        </table>
+        <a href="https://mykhorenko.github.io/index.html">Zurück</a>
+    </div>
+</body>
 </html>
