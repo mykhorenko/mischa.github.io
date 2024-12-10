@@ -8,10 +8,14 @@
             background-color: rgb(182, 189, 119); /* Фон страницы */
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center; /* Центрирование коробки по горизонтали */
-            align-items: flex-start; /* Начало страницы сверху */
-            min-height: 100vh; /* Высота страницы */
+            font-family: Arial, sans-serif; /* Красивый шрифт */
+            line-height: 1.6; /* Удобное расстояние между строками */
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 50px;
+            color: #333; /* Цвет заголовка */
         }
 
         .container {
@@ -19,48 +23,70 @@
             max-width: 800px; /* Максимальная ширина коробки */
             background-color: #f2f2f2; /* Светло-серый цвет коробки */
             padding: 20px; /* Внутренний отступ */
-            margin: 100px 0; /* Отступы сверху и снизу */
+            margin: 30px auto 100px; /* Отступы: сверху, автоцентрирование и снизу */
             border-radius: 10px; /* Закругленные углы */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для коробки */
-            text-align: center; /* Текст выровнен по левому краю */
-            font-family: Arial, sans-serif; /* Красивый шрифт */
-            line-height: 1.6; /* Удобное расстояние между строками */
+            text-align: left; /* Текст выровнен по левому краю */
         }
 
-        a {
-            color: #0077cc; /* Цвет ссылок */
-            text-decoration: none; /* Убираем подчеркивание */
-        }
-
-        a:hover {
-            text-decoration: underline; /* Подчеркивание при наведении */
+        .list-container {
+            display: flex;
+            justify-content: center; /* Центрирование контейнера списков */
         }
 
         ul, ol {
             list-style-position: inside; /* Точки/цифры внутри строки */
+            margin: 0; /* Убираем отступы списков */
+            padding-left: 20px; /* Отступ внутри мини-контейнера */
+            text-align: left; /* Выравнивание текста в списках по левому краю */
         }
 
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            color: white;
+            background-color: #0077cc; /* Цвет кнопки */
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        a:hover {
+            background-color: #005fa3; /* Цвет кнопки при наведении */
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
+        }
     </style>
 </head>
 <body>
+    <h1>Meine erste Website</h1>
     <div class="container">
-        <h1>Meine erste Website</h1>
         <h2>Über mir</h2>
         <p>Ich <u>heiße</u> <strong><em>Mischa</em></strong>. Ich bin <strong><em>14</em></strong> Jahre alt.</p>
+
         <h3>Hobby</h3>
-        <ul>
-            <li>Programmierung</li>
-            <li>Tischtennis</li>
-            <li>Volleyball</li>
-        </ul>
+        <div class="list-container">
+            <ul>
+                <li>Programmierung</li>
+                <li>Tischtennis</li>
+                <li>Volleyball</li>
+            </ul>
+        </div>
+
         <h3>Warum mich wählen?</h3>
-        <ol>
-            <li>schlau</li>
-            <li>schön</li>
-            <li>jung</li>
-        </ol>
+        <div class="list-container">
+            <ol>
+                <li>schlau</li>
+                <li>schön</li>
+                <li>jung</li>
+            </ol>
+        </div>
+
         <a href="https://mykhorenko.github.io/stundenplan.html">Mein Stundenplan</a>
-        <br><br>
         <img src="pfeil_nach_oben.png" alt="Pfeil nach oben" width="80" height="80">
     </div>
 </body>
