@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+        <meta charset="utf-8">
 		<title>Creps Rezept</title>
 		<style>
 			.conteiner {
@@ -13,17 +14,28 @@
 				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
 				padding-top: 10px;
 			}
-			
+
+			.box {
+			    margin: 10px auto;
+				width: 90%; /* Ширина контейнера */
+				max-width: 780px; /* Максимальная ширина */
+				background-color: #FFCCCB; /* Цвет фона коробки */
+				padding: 10px;
+				padding-top: 5px;
+				border-radius: 10px; /* Закругленные углы */
+				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+			}
+
 			body {
-				background-color: rgb(94,198,230);
+				background-color: rgb(182, 189, 119);
 			}
-			
+
 			.schritten {
-				text-align: center;			
+				text-align: center;
 			}
-			
+
 			#seitenthema {
-				text-align: center;			
+				text-align: center;
 			}
 
 			img {
@@ -36,8 +48,8 @@
 				display: flex;
 				justify-content: center;
 			}
-			
-			
+
+
 			a {
 				display: inline-block;
 				margin-top: 20px;
@@ -52,34 +64,48 @@
 			a:hover {
 				background-color: #005fa3; /* Цвет кнопки при наведении */
 			}
-			
+
 			.buttons {
 				text-align: center;
 			}
 		</style>
 	</head>
 	<body>
-		<div class='conteiner'>	
+		<div class='conteiner'>
 			<h1 id='seitenthema'>Creps Rezept</h1>
+
+            <div class='box'>
+                <h2 class='schritten' id='zutaten'>Zutaten</h2>
+                <ul class='anforderungen' id="haupt">
+                    <li>160 g Weizenmehl (Type 405)</li>
+                    <li>1 Prise Zucker</li>
+                    <li>1 Prise Salz</li>
+                    <li>2 Eier (Gr. M)</li>
+                    <li>250 ml Milch</li>
+                    <li>1 TL Butter oder neutrales Pflanzenfett</li>
+                    <li>Zimt-Zucker Mischung oder Nuss-Nougat-Creme</li>
+                </ul>
+            </div>
+
 			<h2 class='schritten' id='1'>1. SCHRITT</h2>
 			<p class='anforderungen'>160 g Weizenmehl (Type 405) 1 Prise Zucker 1 Prise Salz 2 Eier (Gr. M) 250 ml Milch</p>
 			<p class='erklärung'>Für den Teig Mehl mit Zucker und Salz vermischen. Eier und Milch hinzufügen und mit einem Schneebesen oder dem Handrührgerät zu einem glatten Teig verrühren. Der Teig ist relativ dünnflüssig, damit er auf dem Crêpes-Maker möglichst dünn verstrichen werden kann.</p>
-		
+
 			<h2 class='schritten' id='2'>2. SCHRITT</h2>
 			<p class='anforderungen'>1 TL Butter oder neutrales Pflanzenfett</p>
 			<p class='erklärung'>Crêpes-Maker auf mittlerer bis hoher Stufe erhitzen und mit etwas Butter oder Fett bestreichen. Wenn deine Crêpes-Platte antihaft-beschichtet ist, musst du dies nur einmal zu Beginn machen.</p>
-			
+
 			<h2 class='schritten' id='3'>3. SCHRITT</h2>
 			<p class='erklärung'>Eine Kelle Teig auf die Mitte der heißen Platte gießen und direkt mit dem Crêpes-Schaber in kreisenden Bewegungen über zwei Drittel der Platte verteilen. Nach ca. 30-60 Sekunden, sobald der Teig etwas angebacken ist, kann der Teig mit dem Crêpes-Wender umgedreht werden. Nochmal 30-60 Sekunden backen.</p>
-		
+
 			<div class='pictures'>
 			<img src='https://www.einfachbacken.de/sites/einfachbacken.de/files/styles/700_530/public/2021-01/crepes_teig-step.jpg?h=4521fff0&itok=gF1d3Syz' height=50% width=50%>
 			</div>
-			
+
 			<h2 class='schritten' id='4'>4. SCHRITT</h2>
 			<p class='anforderungen'>Nach Belieben Zimt-Zucker Mischung oder Nuss-Nougat-Creme zum Füllen</p>
 			<p class='erklärung'>Nach Belieben die Crêpes direkt auf dem Crêpes-Maker mit Zimt-Zucker-Mischung oder Nuss-Nougat-Creme füllen. Dazu die Füllung auf die Mitte des Crêpe streichen bzw. verteilen. Mithilfe des Crêpes-Wenders den Crêpe in der Hälfte zusammenklappen. Nun von beiden Seiten einklappen, so dass eine Tütenform entsteht. Mit dem restlichen Teig genauso vorgehen. Crêpes direkt servieren. Der Teig ergibt ca. 8 Crêpes. </p>
-			
+
 			<div class='buttons'>
 			<a href="https://mykhorenko.github.io/index.html">Zurück</a>
 			</div>
